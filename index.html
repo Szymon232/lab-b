@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    
+  </head>
+  <body>
+    <main>
+      <div class="searchDiv">
+        <div class="search-icon">&#128269;</div>
+        <input id="search" class="search-input" />
+      </div>
+      <section class="todo">
+        <ul id="list-element" class="list-element">
+          <div class="el">
+            <input type="checkbox" />
+            <p>cos tam</p>
+            <p class="date"></p>
+            <input type="button" value="usuń" />
+          </div>
+        </ul>
+        <div class="addDiv">
+          <input id="name" class="input-name" />
+          <input id="date" class="input-date" type="date" />
+          <input
+            type="button"
+            id="add"
+            value="&#x002B"
+            class="button-add"
+          />
+          
+        </div>
+        <div id="info"></div>
+      </section>
+    </main>
+    <script src="todo.js"></script>
+  </body>
+</html>

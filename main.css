@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.search-icon {
+  border: 1px solid black;
+  border-right: none;
+}
+
+.el {
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px dotted gray;
+}
+
+.el input {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.el input[type="date"] {
+  width: 50%;
+  display: block;
+  text-align: left;
+  float: left;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.searchDiv,
+.addDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.el:last-child {
+  border-bottom: none;
+}
+
+.list-element {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkName {
+  display: flex;
+  align-items: baseline;
+  width: 50%;
+}
+
+.name {
+  text-align: left;
+  width: 100%;
+}
+
+.date {
+  width: 50%;
+  text-align: left;
+}
+
+.removeButton {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+mark {
+  background-color: yellow;
+}
+
+.input-name {
+  width: 90%;
+}
+
+.input-date {
+  width: 25%;
+}
+
+.button-add {
+  background-color: aqua;
+  border: black 1px solid;
+  width: 10%;
+  color: black;
+}
+
+.alert {
+  color: red;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+}
